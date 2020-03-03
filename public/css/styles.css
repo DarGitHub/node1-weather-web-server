@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+
+body {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 40.625rem;
+  margin: 0, auto;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+// header {
+//   margin-top: 1rem;
+//   margin-bottom: 3rem;
+  
+// }
+
+// header a {
+//   color: #888888;
+//   margin-right: 1rem;
+//   text-decoration: none;
+//}
+
+.woodmanPic {
+  width: 15.625rem;
+  border-radius: 25%;
+}
+
+/* Utility Class */
+.container {
+  margin: auto;
+  max-width: 68.75rem;
+  overflow: auto;
+  padding: 0 1.25rem;
+}
+
+/* navbar */
+#navbar {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background: #333;
+  color: lightblue;
+  overflow: auto;
+}
+
+#navbar h1 {
+  float: left;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+#navbar a {
+  color: #fff;
+   
+  text-decoration: none;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 1.25rem;
+  text-align: center;
+  
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+.p-1 {
+  padding: 0.625rem;
+  margin-bottom: 0.3125rem;
+}
+
+input {
+  width: 15.625rem;
+  font-size: 1rem;
+  border: 0.125rem solid #cccccc;
+  padding: 0.25rem;
+  margin-right: 0.125rem;
+}
+
+button {
+  padding: 0.4rem;
+  margin-left: 0.125rem;
+  width: 4rem;
+  background-color: green;
+  color: #fff;
+}
+
+#message-1 {
+  margin: 0.50rem 0;
+}
+
+#message-2 {
+  margin: 0.50rem 0;
+}
+
+footer {
+  color: #888888;
+  border-top: .0625rem solid #eeeeee;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
