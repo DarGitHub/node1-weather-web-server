@@ -44,7 +44,6 @@ const forecast = (latitude, longitude, callback) => {
     latitude +
     "," +
     longitude;
-   
 
   request({ url, json: true }, (error, { body }) => {
     if (error) {
@@ -52,19 +51,25 @@ const forecast = (latitude, longitude, callback) => {
     } else if (body.error) {
       callback("Unable to find location", undefined);
     } else {
-      callback(undefined, "Summary: "+ body.daily.data[0].summary 
-      +" Current Temperature: " + body.currently.temperature + " degrees. " +
-        "Precipitation: " + body.currently.precipProbability +" % chance of rain." )
-      
-      }
-    }); 
+      console.log(body.daily.data[0]);
+      callback(
+        undefined,
+        "Summary: " +
+          body.daily.data[0].summary +
+          " Current Temperature: " +
+          body.currently.temperature +
+          " degrees. " +
+          " With a high of: " +
+          body.daily.data[0].temperatureHigh +
+          ", and a low of: " +
+          body.daily.data[0].temperatureLow +
+          "," +
+          " With a: " +
+          body.currently.precipProbability +
+          " % chance of rain."
+      );
+    }
+  });
 };
-
-
-
-
-
-
-
 
 module.exports = forecast;
