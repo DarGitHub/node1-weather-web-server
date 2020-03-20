@@ -39,7 +39,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help page",
     helpMessage:
-      "Help information: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempore.",
+      "For help send email to:  DarrellSmith1963@gmail.com",
     name: "Darrell Smith"
   });
 });
